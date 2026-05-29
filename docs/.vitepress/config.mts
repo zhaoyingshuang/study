@@ -5,6 +5,13 @@ export default defineConfig({
   title: '技术学习笔记',
   description: 'AI 智能体研发 & 技术学习资料分享',
   lang: 'zh-CN',
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://zhaoyingshuang.github.io/study/',
+  },
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/study/logo.svg' }],
+  ],
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
@@ -20,6 +27,7 @@ export default defineConfig({
             { text: 'AI 智能体开发', link: '/ai-agent/' },
             { text: 'Workflow vs Agent', link: '/ai-agent/workflow-vs-agent' },
             { text: 'Agent 设计模式', link: '/ai-agent/design-patterns' },
+            { text: '术语表', link: '/ai-agent/glossary' },
           ],
         },
         {
@@ -44,6 +52,14 @@ export default defineConfig({
           ],
         },
         {
+          text: '前沿方向',
+          items: [
+            { text: 'AIGC 生成内容', link: '/ai-agent/aigc' },
+            { text: '具身智能', link: '/ai-agent/embodied-ai' },
+            { text: 'AIOS AI 操作系统', link: '/ai-agent/aios' },
+          ],
+        },
+        {
           text: '工程化',
           items: [
             { text: '技术栈总览', link: '/ai-agent/tech-stack' },
@@ -62,19 +78,31 @@ export default defineConfig({
             { text: 'AI Coding Agent', link: '/ai-agent/coding-agent' },
             { text: '开源项目源码解读', link: '/ai-agent/source-code-analysis' },
             { text: '行业应用案例', link: '/ai-agent/industry-applications' },
+            { text: '踩坑记录', link: '/ai-agent/pitfalls' },
+            { text: '面试专题', link: '/ai-agent/interview' },
             { text: '学习资源', link: '/ai-agent/resources' },
           ],
         },
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com' },
+      { icon: 'github', link: 'https://github.com/zhaoyingshuang/study' },
     ],
     footer: {
       message: '基于 CC BY-NC-SA 4.0 协议发布',
     },
     search: {
       provider: 'local',
+    },
+    lastUpdated: {
+      text: '最后更新于',
+    },
+    outline: {
+      label: '页面导航',
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇',
     },
   },
 })

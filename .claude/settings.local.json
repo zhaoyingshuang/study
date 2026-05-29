@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git -C /Users/zys/Project/public/study add README.md docs/changelog.md)",
+      "Bash(git -C /Users/zys/Project/public/study commit -m ' *)",
+      "Bash(git -C /Users/zys/Project/public/study push)"
     ]
   }
 }
