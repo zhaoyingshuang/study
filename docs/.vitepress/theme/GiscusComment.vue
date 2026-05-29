@@ -4,7 +4,7 @@
       repo="zhaoyingshuang/study"
       repoId="R_kgDOSqGj2g"
       category="General"
-      categoryId="DIC_kwDOSqGj2s4ClMCM"
+      categoryId="DIC_kwDOSqGj2s4C-DlC"
       mapping="pathname"
       strict="0"
       reactionsEnabled="1"
