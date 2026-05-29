@@ -14,6 +14,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@giscus/vue": "^3.1.1",
+    "@vite-pwa/vitepress": "^1.1.0",
     "vitepress": "^1.6.4",
     "vitepress-plugin-rss": "^0.4.4",
     "vue": "^3.5.35"

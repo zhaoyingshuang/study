@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withPwa } from '@vite-pwa/vitepress'
 
-export default defineConfig({
+export default withPwa(defineConfig({
   base: '/study/',
   title: '技术学习笔记',
   description: 'AI 智能体研发 & 技术学习资料分享',
@@ -11,7 +12,22 @@ export default defineConfig({
   },
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/study/logo.svg' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
   ],
+  pwa: {
+    registerType: 'autoUpdate',
+    outDir: '.vitepress/dist',
+    manifest: {
+      name: '技术学习笔记',
+      short_name: '学习笔记',
+      description: 'AI 智能体研发学习资料',
+      theme_color: '#3eaf7c',
+      lang: 'zh-CN',
+    },
+    workbox: {
+      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+    },
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
@@ -83,6 +99,12 @@ export default defineConfig({
             { text: '学习资源', link: '/ai-agent/resources' },
           ],
         },
+        {
+          text: '动态',
+          items: [
+            { text: '周报/月报', link: '/ai-agent/weekly' },
+          ],
+        },
       ],
     },
     socialLinks: [
@@ -105,4 +127,4 @@ export default defineConfig({
       next: '下一篇',
     },
   },
-})
+}))

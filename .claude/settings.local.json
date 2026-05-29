@@ -4,7 +4,10 @@
       "Bash(npm run *)",
       "Bash(git -C /Users/zys/Project/public/study add README.md docs/changelog.md)",
       "Bash(git -C /Users/zys/Project/public/study commit -m ' *)",
-      "Bash(git -C /Users/zys/Project/public/study push)"
+      "Bash(git -C /Users/zys/Project/public/study push)",
+      "Bash(git -C /Users/zys/Project/public/study config http.version HTTP/1.1)",
+      "Bash(npm add *)",
+      "Bash(git -C /Users/zys/Project/public/study add -A)"
     ]
   }
 }
